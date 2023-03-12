@@ -7,6 +7,8 @@ class City:
     self.name = res["data"][0]["name"]
     self.lat = res["data"][0]["latitude"]
     self.lon = res["data"][0]["latitude"]
+    self.cont = res["data"][0]["country"]
+    self.pop = res["data"][0]["population"]
 
     
 c = input("vedit misto:")
@@ -14,4 +16,6 @@ city = City(c)
 
 print(city.name)
 print(city.lat)
+print(city.cont)
 print(city.long)
+print(city.pop)
